@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "Membuat ToDoList-API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chopin44/ToDoList-API.git"
+  },
+  "author": "Chopin44",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chopin44/ToDoList-API/issues"
+  },
+  "homepage": "https://github.com/Chopin44/ToDoList-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
