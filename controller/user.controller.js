@@ -30,7 +30,6 @@ module.exports = {
       regis.save();
       res.json({
         message: "Register success!",
-        data,
       });
     } catch (error) {
       res.status(500).send({
