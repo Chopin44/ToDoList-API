@@ -1,14 +1,15 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const allRouter = require('./routes')
-const db = require('./config/config')
+const allRouter = require("./routes");
+require("dotenv").config();
+const db = require("./config/config");
 
-const PORT = 3000;
-app.use(express.json())
+app.use(express.json());
 
-db()
+//koneksi ke mongodb
+db();
 
-app.use(allRouter)
-app.listen(PORT,  (err) => {
-console.log("Server running on Port "+PORT);
-})
+app.use(allRouter);
+app.listen(process.env.PORT || 1212, (err) => {
+  console.log("Server running on Port " + process.env.PORT || 1212);
+});
